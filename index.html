@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="artist" class="common">
+        </div>
+
+        <div id="player" class="players">
+            <h2 style="text-align: center;">Music player</h2>
+
+        </div>
+        <div id="playlist" class="playlists common">
+
+        </div>
+    </div>
+
+    <script type="template" id="temp">
+        <div class="button">
+            <button type="button" class="thumnail-button" onclick=handleVedio("{uri}")>
+                <img src="{thamnel}" class="img" type="video/mp4">
+              <span class='thumnail-time'> {time}</span>
+        </button>
+  </div>
+  <div>
+      <p>{title}</p>
+      
+    </div>
+    </script>
+
+    <script src="mymusic.js"></script>
+</body>
+
+</html>
